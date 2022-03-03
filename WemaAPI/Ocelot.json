@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Onboarding",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Onboarding",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/States",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44355
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/States",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/OTP",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44352
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/OTP",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Customers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44378
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Customers",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Bank",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/apigateway/Bank",
+      "UpstreamHttpMethod": [ "GET", "PUT", "POST" ]
+    }
+  ]
+}

@@ -20,5 +20,8 @@ namespace WemaAPI.Data
         public DbSet<LGA> LGA { get; set; }
 
         public DbSet<OTP> OTP { get; set; }
+
+
+
     }
 }

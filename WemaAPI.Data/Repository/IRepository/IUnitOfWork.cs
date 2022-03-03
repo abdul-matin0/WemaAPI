@@ -13,6 +13,6 @@ namespace WemaAPI.Data.Repository.IRepository
         public ILGARepository LGA { get; }
         public IOTPRepository OTP { get; }
 
-        void SaveAsync();
+        Task SaveAsync();
     }
 }

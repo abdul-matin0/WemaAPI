@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WemaAPI.Data.Repository.IRepository;
 using WemaAPI.Models;
+using WemaAPI.RegistrationService.Helpers;
 using static WemaAPI.RegistrationService.Contracts.Requests.OnboardCustomerRequest;
 using static WemaAPI.RegistrationService.Contracts.Responses.OnboardCustomerResponse;
 
@@ -110,15 +111,15 @@ namespace WemaAPI.RegistrationService.Controllers
 
                 customer.Email = request.Email;
                 customer.PhoneNumber = request.PhoneNumber;
-                customer.StateOfResidenceId = localGovernmentFromDb.StateOfResidenceId;
+                //customer.StateOfResidenceId = localGovernmentFromDb.StateOfResidenceId;
                 customer.LGAId = localGovernmentFromDb.Id;
                 
 
                 //  encrypt password
-                customer.PasswordHash = EncryptHash(request.Password);
+                customer.PasswordHash = EncryptPassword.EncryptHash(request.Password);
 
                 await _unitOfWork.Customer.AddAsync(customer);
-                _unitOfWork.SaveAsync();
+                await _unitOfWork.SaveAsync();
 
                 //if no error return success Message
 
@@ -131,48 +132,6 @@ namespace WemaAPI.RegistrationService.Controllers
         }
 
 
-
-        // GET: api/<OnboardingController>
-        [HttpGet]
-        public async Task<IActionResult> GetStates()
-        {
-            IEnumerable<StateOfResidence> states = await _unitOfWork.StateOfResidence.GetAllAsync();
-
-            return Ok(states);
-        }
-
-
-        /// <summary>
-        /// Get all LGA by state
-        /// </summary>
-        // Get: api/<OnboardingController>/{state}
-        [HttpGet("{state}")]
-        public async Task<IActionResult> GetLGAByState(string state)
-        {
-            // validate state given
-            StateOfResidence stateFromDb = await _unitOfWork.StateOfResidence.GetFirstOrDefaultAsync(u => !string.IsNullOrEmpty(u.State) && u.State.Trim().ToUpper().Equals(state.Trim().ToUpper()));
-
-            // state object not found
-            if(stateFromDb == null)
-            {
-                return NotFound();
-            }
-
-            // get all LGA by state
-            IEnumerable<LGA> localGovernmentAreas = await _unitOfWork.LGA.GetAllAsync();
-            IEnumerable<LGA> result = localGovernmentAreas.Where(u => u.StateOfResidenceId == stateFromDb.Id);
-
-            return Ok(result);
-        }
-
-
-        public string EncryptHash(string value) {
-
-            byte[] data = System.Text.Encoding.ASCII.GetBytes(value);
-            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
-            String hashValue = System.Text.Encoding.ASCII.GetString(data);
-
-            return hashValue;
-        }
+        
     }
 }

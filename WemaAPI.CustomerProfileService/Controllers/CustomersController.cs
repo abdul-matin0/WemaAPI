@@ -25,17 +25,20 @@ namespace WemaAPI.CustomerProfileService.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            IEnumerable<Customer> allCustomers = await _unitOfWork.Customer.GetAllAsync(includeProperties: "StateOfResidence,LGA");
+            IEnumerable<Customer> allCustomers = await _unitOfWork.Customer.GetAllAsync(includeProperties: "LGA");
+            IEnumerable<LGA> allLGA = await _unitOfWork.LGA.GetAllAsync(includeProperties: "StateOfResidence");
 
             CustomerResponse response = new CustomerResponse();
 
             foreach(var customer in allCustomers)
             {
+                var stateOfResidence = allLGA.FirstOrDefault(u => u.LocalGovernmentArea == customer.LGA.LocalGovernmentArea);
+
                 response.Email = customer.Email;
                 response.Id = customer.Id;
                 response.PhoneNumber = customer.PhoneNumber;
 
-                response.StateOfResidence = customer.StateOfResidence.State;
+                response.StateOfResidence = stateOfResidence.StateOfResidence.State;
                 response.LGA = customer.LGA.LocalGovernmentArea;
             }
 

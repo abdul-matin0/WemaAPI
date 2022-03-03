@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WemaAPI.BankService.Helper;
+using WemaAPI.Data.DbInitializer;
 
 namespace WemaAPI.BankService
 {

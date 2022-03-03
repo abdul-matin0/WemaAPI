@@ -37,9 +37,9 @@ namespace WemaAPI.Data.Repository
             _db.Dispose();
         }
 
-        public void SaveAsync()
+        public async Task SaveAsync()
         {
-            _db.SaveChangesAsync();
+            await _db.SaveChangesAsync();
         }
     }
 }

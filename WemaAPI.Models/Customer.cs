@@ -21,11 +21,7 @@ namespace WemaAPI.Models
 
         public string PasswordHash { get; set; }
 
-        
-
-        public int StateOfResidenceId { get; set; }
-        [ForeignKey("StateOfResidenceId")]
-        public StateOfResidence StateOfResidence { get; set; }
+       // public int StateOfResidenceId { get; set; }
 
 
         public int LGAId { get; set; }
@@ -40,6 +36,7 @@ namespace WemaAPI.Models
     /// </summary>
     public class StateOfResidence
     {
+        [Key]
         public int Id { get; set; }
         public string State { get; set; }
     }
@@ -50,6 +47,7 @@ namespace WemaAPI.Models
     /// </summary>
     public class LGA
     {
+        [Key]
         public int Id { get; set; }
         public string LocalGovernmentArea { get; set; }
 

@@ -37,14 +37,9 @@ namespace WemaAPI.Data.Migrations
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("StateOfResidenceId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("LGAId");
-
-                    b.HasIndex("StateOfResidenceId");
 
                     b.ToTable("Customer");
                 });
@@ -110,15 +105,7 @@ namespace WemaAPI.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WemaAPI.Models.StateOfResidence", "StateOfResidence")
-                        .WithMany()
-                        .HasForeignKey("StateOfResidenceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("LGA");
-
-                    b.Navigation("StateOfResidence");
                 });
 
             modelBuilder.Entity("WemaAPI.Models.LGA", b =>

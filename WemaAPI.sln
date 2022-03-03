@@ -11,11 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.Models", "WemaAPI.M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.Data", "WemaAPI.Data\WemaAPI.Data.csproj", "{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.OTPService", "OTPService\WemaAPI.OTPService.csproj", "{9202DFBB-634F-4ED1-8600-7189DA1CA702}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.CustomerProfileService", "WemaAPI.CustomerProfileService\WemaAPI.CustomerProfileService.csproj", "{F1EF111F-04FE-4E78-AF2B-B25088B1667C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.BankService", "WemaAPI.BankService\WemaAPI.BankService.csproj", "{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.OTPService", "WemaAPI.OTPService\WemaAPI.OTPService.csproj", "{B5F552BA-6203-41B4-BAFA-11EC14E062EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +39,6 @@ Global
 		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5F552BA-6203-41B4-BAFA-11EC14E062EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F552BA-6203-41B4-BAFA-11EC14E062EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F552BA-6203-41B4-BAFA-11EC14E062EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F552BA-6203-41B4-BAFA-11EC14E062EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
