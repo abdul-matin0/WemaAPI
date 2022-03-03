@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI", "WemaAPI\WemaAPI.csproj", "{DBC4B6B2-B564-4017-8EE7-BE3AAFE516D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.RegistrationService", "WemaAPI.RegistrationService\WemaAPI.RegistrationService.csproj", "{D83EFF39-5DA6-4AB3-854C-8F31F81C0A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.Models", "WemaAPI.Models\WemaAPI.Models.csproj", "{5B20BE90-6B1F-47D3-9B06-158DCAC5F05D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.Data", "WemaAPI.Data\WemaAPI.Data.csproj", "{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.OTPService", "OTPService\WemaAPI.OTPService.csproj", "{9202DFBB-634F-4ED1-8600-7189DA1CA702}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.CustomerProfileService", "WemaAPI.CustomerProfileService\WemaAPI.CustomerProfileService.csproj", "{F1EF111F-04FE-4E78-AF2B-B25088B1667C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WemaAPI.BankService", "WemaAPI.BankService\WemaAPI.BankService.csproj", "{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBC4B6B2-B564-4017-8EE7-BE3AAFE516D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC4B6B2-B564-4017-8EE7-BE3AAFE516D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC4B6B2-B564-4017-8EE7-BE3AAFE516D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC4B6B2-B564-4017-8EE7-BE3AAFE516D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D83EFF39-5DA6-4AB3-854C-8F31F81C0A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83EFF39-5DA6-4AB3-854C-8F31F81C0A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83EFF39-5DA6-4AB3-854C-8F31F81C0A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83EFF39-5DA6-4AB3-854C-8F31F81C0A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B20BE90-6B1F-47D3-9B06-158DCAC5F05D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B20BE90-6B1F-47D3-9B06-158DCAC5F05D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B20BE90-6B1F-47D3-9B06-158DCAC5F05D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B20BE90-6B1F-47D3-9B06-158DCAC5F05D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{351306EA-B3EE-4BFE-A1B8-7C35CA8762AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9202DFBB-634F-4ED1-8600-7189DA1CA702}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EF111F-04FE-4E78-AF2B-B25088B1667C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2404D4D4-B35B-43BE-B0AF-EE92020A54AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CFE8435-63CE-4635-9A25-5AF7DAE59A38}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\WemaAPI.Models.deps.json
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\WemaAPI.Models.dll
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\ref\WemaAPI.Models.dll
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\WemaAPI.Models.pdb
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.AssemblyInfo.cs
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.dll
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\ref\WemaAPI.Models.dll
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.pdb
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\WemaAPI.Models.runtimeconfig.json
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\bin\Debug\net5.0\WemaAPI.Models.runtimeconfig.dev.json
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\Books\WemaAPI\WemaAPI.Models\obj\Debug\net5.0\WemaAPI.Models.genruntimeconfig.cache
